@@ -1,0 +1,12 @@
+services:
+  flask:
+    build:
+      context: ./flask_app   # matches your Flask folder
+    ports:
+      - "5000:5000"
+
+  django:
+    build:
+      context: ./django_app  # matches your Django folder
+    ports:
+      - "8000:8000"
